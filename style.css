@@ -71,13 +71,9 @@ header{
 
   /* Style for active link */
 .nav-links a.active {
-    border-bottom: 2px solid white; /* Underline active page */
-    font-weight: bold;  /* Optional: Make active page bold */
+    border-bottom: 2px solid white; 
+    font-weight: bold; 
 }
-
-/* .nav-links a:hover {
-    text-decoration: underline;
-} */
 
 /* Hero Section */
 .hero-section {
@@ -195,14 +191,6 @@ header{
     color: white;
   }
  
-
-
-
-
-
-
-
-
 
 
 
@@ -529,13 +517,13 @@ footer {
 
 
 /* For tablets and smaller devices */
-@media (max-width: 600px) {
+@media (max-width: 350px) {
     .navbar h1 {
         font-size: 1.5rem;
     }
 
     .nav-links {
-        display: none; /* Hide navbar links on smaller screens */
+        display: flex; /* Hide navbar links on smaller screens */
     }
 
     .contact-container {
