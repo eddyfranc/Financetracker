@@ -1,22 +1,22 @@
-/* General reset */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    margin-top: 50px; /* To offset the navbar height */
+    margin-top: 0px; 
+}
+header{
+    padding-bottom: 20px;
 }
 
 /* Navbar Styles */
 .navbar {
     background-color: #007bff;
-    padding: 15px 20px;
+    padding: 20px 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -34,6 +34,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size:26px;
 }
 
 .nav-links {
@@ -52,8 +53,31 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ddd;
+    color:black; */
+    text-decoration:black;
 }
+
+.nav-bar li.active a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    /* background-color: #701a1a; */
+    /* text-decoration: underline; */
+  } 
+
+
+
+  /* Style for active link */
+.nav-links a.active {
+    border-bottom: 2px solid white; /* Underline active page */
+    font-weight: bold;  /* Optional: Make active page bold */
+}
+
+/* .nav-links a:hover {
+    text-decoration: underline;
+} */
 
 /* Hero Section */
 .hero-section {
@@ -64,6 +88,8 @@ body {
     align-items: center;
     text-align: center;
     color: white;
+    margin-bottom:0px;
+    padding-bottom:opx;
 }
 
 .hero-content h1 {
@@ -104,31 +130,50 @@ body {
     font-size: 1.2rem;
     color: #555;
 }
+.section-header h2{
+    padding-top:50px;
+    padding-bottom: 10px;
+
+}
+
+
+/* about styling */
+.about-content h2{
+    padding: 10px 10px;
+    padding-bottom: 10px;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+.about-content p{
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
 
 /* feature section styling */
-.feature-container {
+.features-container {
     display: flex;
     justify-content: center;
     margin-top: 30px;
     gap:5px;
-    /* height:500px; */
-    border: 20px;
+    height:500px;
+    border: 20px; 
     background-color: #007bff;
     text-align:center;
-    
-  }
+}
   
-  .item {
+.items {
     display:block;
     text-align: center;
     width: 500px;
-    /* flex: 1fr; */
+    flex: 1fr;
     gap:20px;
     padding-left:40px;
     padding-right:40px;
   }
   
-  .item img {
+  .items img {
     width: 100%;
     height: 300px;
     border-radius: 5px;
@@ -136,7 +181,7 @@ body {
     margin-top:50px;
   }
   
-  .item h3 {
+  .items h3 {
     margin-top: 10px;
     font-size: 22px;
     color: white;
@@ -144,11 +189,12 @@ body {
   }
 
 
-  .item  p{
+  .items  p{
     margin-top: 10px;
     font-size: 16px;
     color: white;
   }
+ 
 
 
 
@@ -157,29 +203,102 @@ body {
 
 
 
-.features-section {
-    padding: 50px 20px;
-    background-color: #f0f0f0;
 
-}
-.section-header{
-    text-align: center;
-}
 
-.features-container {
+
+  
+/* Contact Section */
+.contact-section {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
 }
 
-.feature {
-    width: 30%;
-    text-align: center;
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
 }
-.feature h3 {
-    font-size: 1.5rem;
+
+.contact-image {
+    width: 45%;
+}
+
+.contact-image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.contact-form {
+    width: 50%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.contact-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-info p {
     margin-bottom: 10px;
 }
+
+
 
 .navbar-container h1{
     color:white;
@@ -232,6 +351,8 @@ body {
     margin-top: 20px;
 }
 
+
+
 /* Footer Section */
 footer {
     background-color: #007bff;
@@ -241,7 +362,7 @@ footer {
     margin-top: 50px;
 }
 .footer-container img{
-    height:50px;
+    height:100px;
     width: auto;
     border-radius:0cap;
 
@@ -250,6 +371,17 @@ footer {
 
 .footer-container p {
     font-size: 1rem;
+}
+
+
+
+
+
+
+@media (max-width:498){
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 }
 
 /* Responsive Styles */
@@ -272,4 +404,156 @@ footer {
         font-size: 1rem;
         padding: 10px 20px;
     }
+}
+.contact-container{
+    display:flex;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+
+    .contact-herosection {
+        text-align: center;
+        background-image: url("https://www.franc.app/blog/content/images/size/w2000/2023/07/freelance-tips--1-.png");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        padding-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+
+
+  /* Menu page styling */
+  .menu-herosection {
+    text-align: center;
+    background-image: url(finance-track.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .menu-herosection p {
+    text-align: center;
+    padding-top: 150px;
+    margin: 20px;
+    width: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 24px;
+  }
+  .menu-herosection h2 {
+    text-align: center;
+    width: auto;
+    font-family: Sen, sans-serif;
+    font-size: 55px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    padding: 0 0px;
+  }
+  
+  .item {
+    text-align: center;
+    max-width: 350px;
+    flex: 1 1 350px;
+  }
+  
+  .item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: 100%;
+  }
+  
+  .item h2 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 15px;
+    margin: 15px;
+  }
+  
+  .button:hover {
+    background-color: grey;
+  }
+
+
+
+
+
+
+
+
+/* For tablets and smaller devices */
+@media (max-width: 600px) {
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        display: none; /* Hide navbar links on smaller screens */
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-image img {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+.contact-section{
+    text-align: center;
+
 }
