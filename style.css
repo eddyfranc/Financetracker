@@ -133,7 +133,6 @@ header{
 .features-container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
     gap:5px;
     height:500px;
     border: 20px; 
@@ -294,15 +293,16 @@ button.contact-btn:hover {
   }
 
 
+  /* .footer-containers{
+    margin-top: 0px;
+    padding: 5px 20px;
+  } */
 
+.features-container > h2{
+    text-align: center;
+    align-content: center;
 
-
-
-
-
-
-
-
+}
 
 
 
@@ -327,9 +327,9 @@ button.contact-btn:hover {
 footer {
     background-color: #007bff;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .footer-container img{
     height:100px;
@@ -386,8 +386,8 @@ footer {
     background-color: #007bff;
     color: white;
     text-align: center;
-    padding: 50px 0;
-    margin-top: 50px;
+    padding: 50px;
+    /* margin-top: 50px; */
 }
 
 .footer p {
@@ -494,18 +494,14 @@ footer {
 
 
 
-
-
-
-
 /* For tablets and smaller devices */
-@media (max-width: 350px) {
+@media (max-width: 300px) {
     .navbar h1 {
         font-size: 1.5rem;
     }
 
-    .nav-links {
-        display: flex; /* Hide navbar links on smaller screens */
+    .nav-list {
+        display: flex; 
     }
 
     .contact-container {
@@ -527,3 +523,4 @@ footer {
     text-align: center;
 
 }
+
