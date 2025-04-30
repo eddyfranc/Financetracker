@@ -305,6 +305,29 @@ button.contact-btn:hover {
 
 }
 
+/* Hover effect for the item */
+.items:hover {
+    transform: translateY(-10px); /* Lift the item up on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Add a more prominent shadow */
+  }
+  
+  /* Hover effect for the image */
+  .items:hover img {
+    transform: scale(1.05); /* Slightly zoom in the image */
+  }
+
+
+  /* Hover effect for the item */
+.item img:hover {
+    transform: translateY(-10px); /* Lift the item up on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Add a more prominent shadow */
+  }
+  
+  /* Hover effect for the image */
+  .item:hover img {
+    transform: scale(1.05); /* Slightly zoom in the image */
+  }
+
 
 
 /* Contact Us Section */
