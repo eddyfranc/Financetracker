@@ -217,6 +217,7 @@ header{
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
+    
 }
 
 .form-group {
@@ -408,7 +409,9 @@ footer {
         text-align: center;
         color: white;
       }
-
+.contact-herosection h2{
+    font-size: 55px;
+}
 
 
   /* Menu page styling */
