@@ -7,10 +7,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
-    margin-top: 0px; 
 }
 header{
-    padding-bottom: 20px;
+    padding-bottom:10px;
 }
 
 /* Navbar Styles */
@@ -29,48 +28,34 @@ header{
     align-items: center;
 }
 
-.logo {
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
+
+.navbar-container h1{
+    font-size: 35px;;
     font-weight: bold;
-    font-size:26px;
+
 }
 
-.nav-links {
-    list-style-type: none;
+.nav-list {
+    list-style: none;
     display: flex;
 }
 
-.nav-links li {
+.nav-list li {
     margin: 0 15px;
 }
 
-.nav-links a {
+.nav-list a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.nav-links a:hover {
+.nav-list a:hover {
     color:black; */
     text-decoration:black;
 }
 
-.nav-bar li.active a::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    /* background-color: #701a1a; */
-    /* text-decoration: underline; */
-  } 
-
-
-
-  /* Style for active link */
-.nav-links a.active {
+.nav-list a.active {
     border-bottom: 2px solid white; 
     font-weight: bold; 
 }
@@ -84,8 +69,6 @@ header{
     align-items: center;
     text-align: center;
     color: white;
-    margin-bottom:0px;
-    padding-bottom:opx;
 }
 
 .hero-content h1 {
@@ -95,7 +78,7 @@ header{
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .cta-btn {
@@ -119,6 +102,7 @@ header{
 }
 
 .section-header {
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -128,10 +112,8 @@ header{
 }
 .section-header h2{
     padding-top:50px;
-    padding-bottom: 10px;
-
+    margin-bottom: 20px;
 }
-
 
 /* about styling */
 .about-content h2{
