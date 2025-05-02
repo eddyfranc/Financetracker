@@ -116,6 +116,25 @@ header{
 }
 
 /* about styling */
+
+.section-header h2{
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+}
+.features-container img{
+    float:left;
+}
+
+.features-container p{
+    line-height:20px;
+    text-align: center;
+}
+.about-section{
+    /* display:flex;
+    flex-wrap: wrap; */
+
+}
 .about-content h2{
     padding: 10px 10px;
     padding-bottom: 10px;
@@ -131,27 +150,28 @@ header{
 
 /* feature section styling */
 .features-container {
-    display: flex;
-    justify-content: center;
-    gap:5px;
-    height:500px;
-    border: 20px; 
-    background-color: #007bff;
+    /* display: flex;
+    justify-content: center; */
+    /* gap:5px; */
+    /* height:700px; */
+    /* border: 20px;  */
+    background-color: white;
     text-align:center;
 }
   
 .items {
-    display:block;
+    /* display:block; */
     text-align: center;
     width: 500px;
     flex: 1fr;
     gap:20px;
-    padding-left:40px;
-    padding-right:40px;
+    /* padding-left:40px;
+    padding-right:40px; */
   }
   
   .items img {
-    width: 100%;
+    float: left;
+    width: auto;
     height: 300px;
     border-radius: 5px;
     box-shadow: none;
@@ -554,7 +574,26 @@ footer {
     list-style: none;
     text-decoration: none;
     line-height:40px;
+    color:white;
+    
+    
 }
 .contact-footer ul{
     list-style: none;
+    text-align: left;
+    
+}
+.subscribe{
+    padding:10px;
+    margin: 10px;
+}
+.contact-footer p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.section-header h2{
+    text-align: center;
+
 }
