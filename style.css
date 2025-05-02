@@ -150,23 +150,16 @@ header{
 
 /* feature section styling */
 .features-container {
-    /* display: flex;
-    justify-content: center; */
-    /* gap:5px; */
-    /* height:700px; */
-    /* border: 20px;  */
     background-color: white;
     text-align:center;
 }
   
 .items {
-    /* display:block; */
     text-align: center;
     width: 500px;
     flex: 1fr;
     gap:20px;
-    /* padding-left:40px;
-    padding-right:40px; */
+    
   }
   
   .items img {
