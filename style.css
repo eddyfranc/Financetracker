@@ -541,3 +541,20 @@ footer {
 
 }
 
+
+.contact-footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 3px;
+}
+
+.contact-footer li a{
+    list-style: none;
+    text-decoration: none;
+    line-height:40px;
+}
+.contact-footer ul{
+    list-style: none;
+}
