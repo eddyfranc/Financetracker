@@ -293,44 +293,52 @@ button.contact-btn:hover {
     display:flex;
   }
 
-
-  /* .footer-containers{
-    margin-top: 0px;
-    padding: 5px 20px;
-  } */
-
 .features-container > h2{
     text-align: center;
     align-content: center;
 
 }
 
-/* Hover effect for the item */
 .items:hover {
-    transform: translateY(-10px); /* Lift the item up on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Add a more prominent shadow */
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /
   }
   
-  /* Hover effect for the image */
   .items:hover img {
-    transform: scale(1.05); /* Slightly zoom in the image */
+    transform: scale(1.05); 
   }
 
 
-  /* Hover effect for the item */
 .item img:hover {
-    transform: translateY(-10px); /* Lift the item up on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Add a more prominent shadow */
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
   }
   
   /* Hover effect for the image */
   .item:hover img {
-    transform: scale(1.05); /* Slightly zoom in the image */
+    transform: scale(1.05); 
   }
 
 
 
 /* Contact Us Section */
+.contact-herosection {
+    text-align: center;
+    background-image: url("https://www.franc.app/blog/content/images/size/w2000/2023/07/freelance-tips--1-.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+.contact-herosection h2{
+font-size: 55px;
+}
+
 .contact-section {
     padding: 50px 20px;
     text-align: center;
@@ -346,14 +354,12 @@ button.contact-btn:hover {
 }
 
 
-
 /* Footer Section */
 footer {
     background-color: #007bff;
     color: white;
     padding: 20px;
     text-align: center;
-    /* margin-top: 50px; */
 }
 .footer-container img{
     height:100px;
@@ -371,7 +377,7 @@ footer {
 
 
 
-
+/* Responsiveness */
 @media (max-width:498){
     body{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -411,7 +417,7 @@ footer {
     color: white;
     text-align: center;
     padding: 50px;
-    /* margin-top: 50px; */
+
 }
 
 .footer p {
@@ -419,22 +425,7 @@ footer {
 }
 
 
-    .contact-herosection {
-        text-align: center;
-        background-image: url("https://www.franc.app/blog/content/images/size/w2000/2023/07/freelance-tips--1-.png");
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        padding-top: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-      }
-.contact-herosection h2{
-    font-size: 55px;
-}
+
 
 
   /* Menu page styling */
